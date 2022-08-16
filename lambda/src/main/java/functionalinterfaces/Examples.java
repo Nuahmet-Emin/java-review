@@ -1,5 +1,6 @@
 package functionalinterfaces;
 
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
@@ -24,6 +25,12 @@ public class Examples {
 
         Consumer<Integer> display =  i -> System.out.println(i);
         display.accept(1);
+
+        //**********BiConsumer*********//
+
+        BiConsumer<Integer, Integer> addTwo = (x,y) -> System.out.println(x+y);
+        addTwo.accept(2,5);
+
 
 
     }
