@@ -1,5 +1,6 @@
 package functionalinterfaces;
 
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class Examples {
@@ -18,6 +19,12 @@ public class Examples {
 
         Predicate<Integer> lesserThan =  a ->  a<18; // implementation of test method that belongs to Predicate interface
         System.out.println(lesserThan.test(8));
+
+        //**********Consumer*********//
+
+        Consumer<Integer> display =  i -> System.out.println(i);
+        display.accept(1);
+
 
     }
 }
