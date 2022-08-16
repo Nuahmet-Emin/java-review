@@ -1,9 +1,6 @@
 package functionalinterfaces;
 
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
+import java.util.function.*;
 
 public class Examples {
     public static void main(String[] args) {
@@ -36,6 +33,11 @@ public class Examples {
 
         Function<String,String> function = s -> "Hello " + s;
         System.out.println(function.apply("Nurahmet"));
+
+        //**********Supplier*********//
+
+        Supplier<Double> randomValue = () -> Math.random();
+        System.out.println(randomValue.get());
 
 
     }
