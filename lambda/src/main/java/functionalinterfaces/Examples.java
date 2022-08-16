@@ -2,6 +2,7 @@ package functionalinterfaces;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class Examples {
@@ -31,6 +32,10 @@ public class Examples {
         BiConsumer<Integer, Integer> addTwo = (x,y) -> System.out.println(x+y);
         addTwo.accept(2,5);
 
+        //**********Function*********//
+
+        Function<String,String> function = s -> "Hello " + s;
+        System.out.println(function.apply("Nurahmet"));
 
 
     }
