@@ -37,5 +37,11 @@ public class Demo {
 
         Consumer<Integer> display2 = System.out:: println;
         display2.accept(40);
+
+      BiFunction<MyClass, Integer, Double> v2 = MyClass::method;
+
+      //BiFunction<MyClass,Integer, Double> v3 = new MyClass()::method;
+
+       BiFunction<String,String,String> v3 = String::concat;
     }
 }
