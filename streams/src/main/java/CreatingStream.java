@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
@@ -16,6 +17,18 @@ public class CreatingStream {
        Stream<String> courseStream2 =  courseList.stream();
 
 
+       List<Course> myCourses = Arrays.asList(
+               new Course("Java",100),
+               new Course("DS",101),
+               new Course("Spring",102),
+               new Course("Microservices",103)
+
+       );
+       Stream<Course> myCourseStream = myCourses.stream();
+
+
+       //Creating stream from values
+        Stream<Integer> stream = Stream.of(1,2,3,4);
 
 
     }
