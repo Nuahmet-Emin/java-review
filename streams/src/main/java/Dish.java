@@ -5,7 +5,9 @@ import lombok.Data;
 @AllArgsConstructor
 public class Dish {
 
-    String name;
-    int calories;
+    private String name;
+    private boolean vegetarian;
+    private int calories;
+    private Type type;
 
 }
